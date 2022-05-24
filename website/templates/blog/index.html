@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    My Blog
+{% endblock title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}">
+{% endblock css_files %}
+
+{% block content %}
+    <section id="welcome">
+        <header>
+            <img src="{% static "blog/images/python.jpg" %}" alt="Sinisa - The Author of this Blog!">
+            <h2>SINISA'S BLOG</h2>
+        </header>
+        <p>
+            Hi! I'm Sinisa and i love to learn Python and Django!
+        </p>
+    </section>
+    <section id="latest-posts">
+        <h2>My latest thoughts</h2>
+            <ul>
+                {% for post in posts %}
+                {% include "blog/includes/post.html" %}
+                {% endfor %}
+            </ul>
+    </section>
+    <section id="about">
+        <h2>What i do?</h2>
+        <p>
+            I love programming and learning new technologies in general!
+        </p>
+        <p>
+            My goal is growing as a developer and if i could help you do the same, i'd be very happy!
+        </p>
+    </section>
+{% endblock content %}
