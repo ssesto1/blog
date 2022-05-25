@@ -1,15 +1,12 @@
 .certificates {
-  display: flex;
-  flex-direction:row;
-  align-items: center;
-  text-align: center;
+    display: inline;
+    text-align: justify;
 }
 
 .certificates img {
-  margin-right: 20px;
-  width: 30rem;
-  height: 30rem;
-  object-fit: contain;
+  padding: 5px;
+  width: 32%;
+  object-fit: fill;
 }
 
 .certificates a {

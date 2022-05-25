@@ -13,25 +13,28 @@
 {% block content %}
     <section id="all-posts">
         <h2>My Certificates</h2>
-            <ul>
-                <li>
-                    <article class="certificates">
-                        <a href="https://www.udemy.com/certificate/UC-287cda13-0970-4615-acdb-3dbcb17656d4/">
-                            <img src={% static "blog/images/git.jpg" %} alt="nesto">
-                        </a>
-                        <a href="https://www.udemy.com/certificate/UC-0ee2df76-1f42-423d-afc7-9f6dbb3c2878/">
-                            <img src={% static "blog/images/djangomax.jpg" %} alt="nesto">
-                        </a>                        
-                    </article>  
-                    <article class="certificates">
-                        <a href="https://www.udemy.com/certificate/UC-3250b4a0-da52-4108-9ccb-38d56df3a2d5/">
-                            <img src={% static "blog/images/djangojose.jpg" %} alt="nesto">
-                        </a>
-                        <a href="https://www.udemy.com/certificate/UC-b234cc06-6918-4365-a451-9e432fe0b102/">
-                            <img src={% static "blog/images/djangobrad.jpg" %} alt="nesto">
-                        </a>                        
-                    </article>                
-                </li>
-            </ul>
-    </section>
+        <div class="certificates">
+            <div>
+                <a href="https://www.udemy.com/certificate/UC-287cda13-0970-4615-acdb-3dbcb17656d4/">
+                    <img src={% static "blog/images/git.jpg" %} alt="nesto" width="100%">
+                </a>       
+            
+                <a href="https://www.udemy.com/certificate/UC-0ee2df76-1f42-423d-afc7-9f6dbb3c2878/">
+                    <img src={% static "blog/images/djangomax.jpg" %} alt="nesto" width="100%">
+                </a>
+        
+                <a href="https://www.udemy.com/certificate/UC-3250b4a0-da52-4108-9ccb-38d56df3a2d5/">
+                    <img src={% static "blog/images/djangojose.jpg" %} alt="nesto" width="100%">
+                </a>
+            </div>                    
+            <div>
+                <a href="https://www.udemy.com/certificate/UC-b234cc06-6918-4365-a451-9e432fe0b102/">
+                    <img src={% static "blog/images/djangobrad.jpg" %} alt="nesto" width="100%">
+                </a>
+            </div>
+             
+        </div>                       
+    </section>                
+                
+
 {% endblock content %}
