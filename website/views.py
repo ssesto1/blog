@@ -25,6 +25,12 @@ class AllPostsView(ListView):
     ordering = ["-date"]
     context_object_name = "all_posts"
 
+class CertificatesView(ListView):
+    template_name = "blog/certificates.html"
+    model = Post
+    ordering = ["-date"]
+    context_object_name = "all_posts"
+
 class SinglePostView(View):
 
     def is_stored_post(self, request, post_id):

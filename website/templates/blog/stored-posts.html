@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-    My Stored Posts
+    My Stored Courses
 {% endblock title %}
 
 {% block css_files %}
@@ -12,7 +12,7 @@
 {% block content %}
     <section id="stored-posts">
         {% if not has_posts %}
-            <p>You didn't save any posts for read later!</p>
+            <p>You didn't save any course for read later!</p>
         {% endif %}
         <ul>
             {% for post in posts %}
