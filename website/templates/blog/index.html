@@ -20,11 +20,38 @@
         </p>
     </section>
     <section id="latest-posts">
-        <h2>My latest thoughts</h2>
+        <h2>Visit my profile on social network!</h2>
             <ul>
-                {% for post in posts %}
-                {% include "blog/includes/post.html" %}
-                {% endfor %}
+                <li>
+                    <article class="post">
+                        <a href="https://www.linkedin.com/in/sestosinisa/">
+                            <img src={% static "blog/images/linkedin.png" %} alt="nesto">
+                                <div class="post__content">
+                                    <h3>LinkedIn</h3>
+                                </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article class="post">
+                        <a href="https://github.com/ssesto1">
+                            <img src={% static "blog/images/github.png" %} alt="nesto">
+                                <div class="post__content">
+                                    <h3>Github</h3>
+                                </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article class="post">
+                        <a href="https://www.facebook.com/sinisa.sesto/">
+                            <img src={% static "blog/images/facebook.png" %} alt="nesto">
+                                <div class="post__content">
+                                    <h3>Facebook</h3>
+                                </div>
+                        </a>
+                    </article>
+                </li>
             </ul>
     </section>
     <section id="about">
